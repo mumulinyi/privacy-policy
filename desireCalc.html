@@ -1,207 +1,173 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>隐私政策 - {{APP_NAME}}</title>
-  <meta name="description" content="{{APP_NAME}} 隐私政策与数据保护说明">
+  <title>Privacy Policy - DesireCalc</title>
+  <meta name="description" content="DesireCalc Privacy Policy">
   <meta name="format-detection" content="telephone=no,email=no,address=no">
-  <link rel="canonical" href="{{PRIVACY_POLICY_URL}}">
+  <link rel="canonical" href="https://mumulinyi.github.io/privacy-policy/desireCalc.html">
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #fff;
-      --fg: #111;
-      --muted: #666;
-      --primary: #0b6efd;
-      --border: #e5e5e5;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0c0c0c;
-        --fg: #f2f2f2;
-        --muted: #b5b5b5;
-        --primary: #4da3ff;
-        --border: #333;
-      }
-    }
-    html { font-size: 16px; }
-    body {
-      margin: 0; padding: 2rem 1rem; background: var(--bg); color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", sans-serif;
-      line-height: 1.7;
-    }
+    :root { color-scheme: light dark; --bg:#fff; --fg:#111; --muted:#666; --primary:#0b6efd; --border:#e5e5e5; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0c0c0c; --fg:#f2f2f2; --muted:#b5b5b5; --primary:#4da3ff; --border:#333; } }
+    body { margin:0; padding:2rem 1rem; background:var(--bg); color:var(--fg); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif; line-height:1.7; }
     main { max-width: 900px; margin: 0 auto; }
-    header h1 { margin: 0 0 .25rem 0; font-size: 2rem; }
-    header .meta { color: var(--muted); font-size: .95rem; }
-    nav.toc {
-      margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: .75rem;
-      background: color-mix(in oklab, var(--bg) 90%, var(--primary) 10%);
-    }
-    nav.toc ol { margin: 0; padding-left: 1.25rem; }
-    a { color: var(--primary); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    section { margin: 1.5rem 0 2rem; }
-    h2 { font-size: 1.4rem; margin: 1.25rem 0 .5rem; }
-    h3 { font-size: 1.1rem; margin: 1rem 0 .25rem; }
-    ul, ol { padding-left: 1.25rem; }
-    .note { color: var(--muted); font-size: .95rem; }
-    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); }
-    code.placeholder { background: color-mix(in oklab, var(--bg) 90%, var(--primary) 10%); padding: .1rem .3rem; border-radius: .3rem; }
-    @media print { nav.toc { break-inside: avoid; } a { color: inherit; } }
+    header h1 { margin:0 0 .25rem 0; font-size:2rem; }
+    header .meta { color:var(--muted); font-size:.95rem; }
+    nav.toc { margin:1.5rem 0; padding:1rem; border:1px solid var(--border); border-radius:.75rem; }
+    nav.toc ol { margin:0; padding-left:1.25rem; }
+    a { color:var(--primary); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    section { margin:1.5rem 0 2rem; }
+    h2 { font-size:1.4rem; margin:1.25rem 0 .5rem; }
+    h3 { font-size:1.1rem; margin:1rem 0 .25rem; }
+    ul,ol { padding-left:1.25rem; }
+    footer { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--border); color:var(--muted); }
   </style>
 </head>
 <body>
 <main>
   <header>
-    <h1>隐私政策</h1>
+    <h1>Privacy Policy</h1>
     <p class="meta">
-      适用应用：<strong>{{APP_NAME}}</strong><br>
-      发布方：<strong>{{COMPANY_NAME}}</strong>（“我们”）<br>
-      生效日期：<strong>{{EFFECTIVE_DATE}}</strong> ｜ 最近更新：<strong>{{LAST_UPDATE_DATE}}</strong>
+      App: <strong>DesireCalc</strong><br>
+      Publisher: <strong>LINYI</strong><br>
+      Effective: <strong>2025年10月</strong> | Last updated: <strong>2025年10月</strong>
     </p>
   </header>
 
-  <nav class="toc" aria-label="目录">
-    <strong>目录</strong>
+  <nav class="toc" aria-label="Table of Contents">
+    <strong>Contents</strong>
     <ol>
-      <li><a href="#scope">一、适用范围与术语</a></li>
-      <li><a href="#data-collected">二、我们收集的个人信息</a></li>
-      <li><a href="#use-of-data">三、我们如何使用个人信息</a></li>
-      <li><a href="#sharing">四、信息共享与第三方服务</a></li>
-      <li><a href="#permissions">五、设备权限使用说明</a></li>
-      <li><a href="#retention">六、信息存储与保留期限</a></li>
-      <li><a href="#security">七、信息安全</a></li>
-      <li><a href="#children">八、未成年人保护</a></li>
-      <li><a href="#transfer">九、跨境传输</a></li>
-      <li><a href="#your-rights">十、您的权利与选择</a></li>
-      <li><a href="#contact">十一、联系我们</a></li>
-      <li><a href="#changes">十二、政策更新</a></li>
-      <li><a href="#terms">十三、服务条款 / EULA</a></li>
+      <li><a href="#scope">1. Scope</a></li>
+      <li><a href="#data">2. Information We Collect</a></li>
+      <li><a href="#use">3. How We Use Information</a></li>
+      <li><a href="#sharing">4. Sharing & Third Parties</a></li>
+      <li><a href="#permissions">5. Device Permissions</a></li>
+      <li><a href="#retention">6. Storage & Retention</a></li>
+      <li><a href="#security">7. Security</a></li>
+      <li><a href="#children">8. Children</a></li>
+      <li><a href="#transfers">9. International Transfers</a></li>
+      <li><a href="#rights">10. Your Rights</a></li>
+      <li><a href="#contact">11. Contact</a></li>
+      <li><a href="#changes">12. Changes</a></li>
+      <li><a href="#terms">13. Terms of Use / EULA</a></li>
     </ol>
   </nav>
 
   <section id="scope">
-    <h2>一、适用范围与术语</h2>
-    <p>本隐私政策适用于您使用 <strong>{{APP_NAME}}</strong> 移动应用及其相关功能服务。除非另有说明，本政策中的“个人信息”指以电子或其他方式记录的可单独或与其他信息结合识别自然人身份的各种信息。</p>
-    <p>当本政策中提及“我们”，指 <strong>{{COMPANY_NAME}}</strong>。如您不同意本政策的任何内容，请立即停止使用我们的服务。</p>
+    <h2>1. Scope</h2>
+    <p>This Policy applies to the DesireCalc mobile application and related services. "Personal information" means data that identifies an individual on its own or when combined with other data. If you do not agree with this Policy, please stop using the app.</p>
   </section>
 
-  <section id="data-collected">
-    <h2>二、我们收集的个人信息</h2>
-    <h3>1. 您主动提供的信息</h3>
+  <section id="data">
+    <h2>2. Information We Collect</h2>
+    <h3>a) You Provide</h3>
     <ul>
-      <li>账号与订阅信息：当您进行订阅或购买时，我们会处理由 Apple 提供的交易相关凭证（例如收据数据），但我们不直接保存您的支付卡信息。</li>
-      <li>反馈与联络信息：当您通过“联系我们”或反馈渠道与我们沟通时，您可能提供邮箱、问题描述、日志等。</li>
+      <li>Account & Subscription: We process Apple-provided transaction credentials (e.g., receipt data) for purchases. We do not store payment card details.</li>
+      <li>Support: When you contact us, you may provide an email address, issue description, logs, or other content.</li>
     </ul>
-    <h3>2. 您在使用过程中产生的信息</h3>
+    <h3>b) Generated During Use</h3>
     <ul>
-      <li>应用使用数据：为改进产品稳定性与安全性，我们可能收集崩溃日志与错误诊断信息（不包含与您身份直接关联的敏感数据）。</li>
-      <li>云端数据（如启用）：若您启用云同步（例如 Apple iCloud/CloudKit），与应用使用相关的数据条目可能存储于您的 iCloud 账户空间。</li>
+      <li>Usage & Diagnostics: Crash logs and diagnostics to improve stability and security, without sensitive identifiers.</li>
+      <li>Cloud Data (if enabled): App data may be stored in your iCloud/CloudKit account space.</li>
     </ul>
-    <h3>3. AI/识别功能相关（如适用）</h3>
+    <h3>c) AI/Recognition (if applicable)</h3>
     <ul>
-      <li>当您主动使用图像识别或智能分析功能时，您选择提交的文本或图片仅用于完成该次分析与返回结果；我们不将该数据用于模型训练。</li>
-      <li>如使用第三方 AI 服务（例如“{{AI_PROVIDER_NAME}}”），我们仅在您触发相关功能时向该服务传输必要数据。具体处理规则以该服务的隐私政策为准。</li>
+      <li>Submitted text/images are used only to perform the requested analysis and return results. We do not use them for model training.</li>
+      <li>If third-party AI is involved (e.g., QWEN), we only transmit necessary data when you trigger those features. See the provider's privacy policy.</li>
     </ul>
-    <p class="note">注：我们不会基于您的设备通讯录、短信或其他与核心功能无关的信息进行收集。</p>
   </section>
 
-  <section id="use-of-data">
-    <h2>三、我们如何使用个人信息</h2>
+  <section id="use">
+    <h2>3. How We Use Information</h2>
     <ul>
-      <li>提供与维护核心功能，包括数据记录、分析与展示。</li>
-      <li>完成订阅购买与验证，防止欺诈与滥用。</li>
-      <li>改进产品体验与性能，进行必要的故障诊断与统计分析。</li>
-      <li>响应您的请求与问题，提供技术支持与客户服务。</li>
-      <li>遵循法律法规与监管要求。</li>
+      <li>Provide and maintain core features (recording, analysis, presentation).</li>
+      <li>Complete purchases, verify subscriptions, and prevent fraud/abuse.</li>
+      <li>Improve experience and performance; diagnostics and statistics.</li>
+      <li>Respond to requests; provide support and customer service.</li>
+      <li>Comply with laws and regulatory requirements.</li>
     </ul>
   </section>
 
   <section id="sharing">
-    <h2>四、信息共享与第三方服务</h2>
-    <p>我们不会向任何第三方出售您的个人信息。基于合法、正当、必要的原则，我们可能在以下情形共享或委托处理您的信息：</p>
+    <h2>4. Sharing & Third Parties</h2>
+    <p>We do not sell personal information. We may share or entrust processing when lawful, legitimate, and necessary:</p>
     <ul>
-      <li>使用 Apple 的 StoreKit 完成订阅与支付验证。</li>
-      <li>使用 Apple 的 CloudKit/iCloud 进行云存储与同步（如您启用）。</li>
-      <li>使用第三方 AI 服务（如适用）以完成您主动发起的识别/分析请求，仅传输必要数据。</li>
-      <li>法律要求或政府机关提出的合法请求。</li>
-      <li>为保护您或他人的重大合法权益所必要的情形。</li>
+      <li>Apple StoreKit for subscription/payment verification.</li>
+      <li>Apple CloudKit/iCloud for storage and sync (if enabled).</li>
+      <li>Third-party AI services (if applicable) for user-initiated requests; only necessary data is sent.</li>
+      <li>Legal requirements or government requests.</li>
+      <li>Protection of significant legitimate rights and interests.</li>
     </ul>
-    <p>我们会评估第三方服务的合规性，并与其约定数据保护义务。您可查阅相关第三方隐私政策以了解其处理规则。</p>
   </section>
 
   <section id="permissions">
-    <h2>五、设备权限使用说明</h2>
+    <h2>5. Device Permissions</h2>
     <ul>
-      <li>相机/照片库：用于拍摄或选择图片以进行识别或记录（仅在您主动使用相关功能时请求）。</li>
-      <li>网络访问：用于数据同步、订阅验证与联机分析（如适用）。</li>
-      <li>通知：用于向您推送订阅状态、重要提醒等（您可在系统设置中随时关闭）。</li>
+      <li>Camera/Photos: Capture or select images for recognition/recording (requested only when used).</li>
+      <li>Network: Sync data, verify subscriptions, online analysis (if applicable).</li>
+      <li>Notifications: Send status updates and important alerts (can be disabled in settings).</li>
     </ul>
-    <p>拒绝授予权限可能影响相关功能的使用，但不影响其他功能。</p>
   </section>
 
   <section id="retention">
-    <h2>六、信息存储与保留期限</h2>
+    <h2>6. Storage & Retention</h2>
     <ul>
-      <li>本地数据：存储于您的设备本地，您可通过系统或应用提供的功能进行清除。</li>
-      <li>云端数据：如启用 CloudKit/iCloud，由 Apple 按其条款进行存储与保护。</li>
-      <li>订阅交易凭证：为完成与验证交易所需而保留，遵守法律法规及平台要求。</li>
-      <li>日志与诊断信息：仅在必要期间保留，用于问题定位与修复，超过期限将删除或匿名化处理。</li>
+      <li>Local: Stored on your device; you can clear it via system/app features.</li>
+      <li>Cloud: Stored and protected by Apple per its terms (if enabled).</li>
+      <li>Transaction Credentials: Retained as necessary for completion/validation per laws and platform rules.</li>
+      <li>Logs/Diagnostics: Retained only as needed; deleted or anonymized thereafter.</li>
     </ul>
   </section>
 
   <section id="security">
-    <h2>七、信息安全</h2>
-    <p>我们采取合理的安全措施保护您的信息免遭未经授权的访问、披露或丢失，包括传输加密、访问控制与最小化原则。但请理解任何系统都存在风险，无法保证绝对安全。</p>
+    <h2>7. Security</h2>
+    <p>We use reasonable measures (encryption, access controls, data minimization) to protect your information. No system is entirely risk-free; absolute security cannot be guaranteed.</p>
   </section>
 
   <section id="children">
-    <h2>八、未成年人保护</h2>
-    <p>我们的产品面向一般人群，不以未成年人为目标。如果我们发现在未获得监护人同意的情况下收集了未成年人的个人信息，我们将尽快删除相关信息。</p>
+    <h2>8. Children</h2>
+    <p>Our app is for general audiences and is not directed at children. If we learn we collected a child's data without verifiable parental consent, we will delete it promptly.</p>
   </section>
 
-  <section id="transfer">
-    <h2>九、跨境传输</h2>
-    <p>在您使用第三方云或 AI 服务时（如适用），数据可能传输并存储于相应服务的所在国家或地区。我们将依据法律法规采取必要措施，确保跨境传输的合规与安全。</p>
+  <section id="transfers">
+    <h2>9. International Transfers</h2>
+    <p>Using third-party cloud or AI services (if applicable) may involve transfers to other countries/regions where those services operate. We take necessary legal measures to ensure compliant transfers.</p>
   </section>
 
-  <section id="your-rights">
-    <h2>十、您的权利与选择</h2>
+  <section id="rights">
+    <h2>10. Your Rights</h2>
     <ul>
-      <li>访问与更正：您可访问或更正您在应用中的信息。</li>
-      <li>删除：在不违反法律法规或平台规则的前提下，您可请求删除相关信息。</li>
-      <li>撤回同意：您可通过关闭权限、停用云同步或不使用相关功能来撤回处理同意。</li>
-      <li>投诉与举报：如您对我们的处理存在疑问或不满，您可向我们或监管机构进行投诉。</li>
+      <li>Access/Correction: Access or correct information within the app.</li>
+      <li>Deletion: Request deletion subject to laws and platform rules.</li>
+      <li>Withdraw Consent: Disable permissions, turn off cloud sync, or avoid related features.</li>
+      <li>Complaints: Contact us or supervisory authorities if you have concerns.</li>
     </ul>
   </section>
 
   <section id="contact">
-    <h2>十一、联系我们</h2>
-    <p>如您对本政策或您的个人信息处理有任何疑问、建议或请求，请通过以下方式联系我们：</p>
+    <h2>11. Contact</h2>
     <ul>
-      <li>电子邮箱：<a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></li>
-      <li>通信地址：{{COMPANY_ADDRESS}}</li>
+      <li>Email: <a href="mailto:19927728@qq.com">19927728@qq.com</a></li>
     </ul>
   </section>
 
   <section id="changes">
-    <h2>十二、政策更新</h2>
-    <p>我们可能会不时更新本隐私政策。当政策发生重大变更时，我们会通过应用内公告或其他适当方式通知您。更新后的政策自发布之日起生效。继续使用我们的服务即表示您接受更新后的政策。</p>
+    <h2>12. Changes</h2>
+    <p>We may update this Policy. For material changes, we will notify you via in-app notices or other means. Updates take effect upon publication; continued use constitutes acceptance.</p>
   </section>
 
   <section id="terms">
-    <h2>十三、服务条款 / EULA</h2>
-    <p>有关使用条款与最终用户许可协议，请访问：</p>
+    <h2>13. Terms of Use / EULA</h2>
     <ul>
-      <li><a href="{{TERMS_OF_USE_URL}}" rel="noopener">服务条款（Terms of Use）</a></li>
-      <li>或 Apple 标准许可协议（EULA）：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></li>
+      <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple Standard EULA</a></li>
     </ul>
   </section>
 
   <footer>
-    <p>版权声明 © {{COPYRIGHT_YEAR}} {{COMPANY_NAME}}。保留所有权利。</p>
-    <p class="note">本页面最后更新于：{{LAST_UPDATE_DATE}} ｜ 文档版本：{{POLICY_VERSION}}</p>
+    <p>Copyright © 2025 LINYI. All rights reserved.</p>
+    <p class="meta">Document version: 1.0</p>
   </footer>
 </main>
 </body>
