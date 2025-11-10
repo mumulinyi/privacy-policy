@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OneBook 隐私政策</title>
+    <style>
+      :root {
+        --fg: #222;
+        --muted: #666;
+        --bg: #ffffff;
+        --border: #e5e7eb;
+        --accent: #0ea5e9;
+      }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        color: var(--fg);
+        background: var(--bg);
+        line-height: 1.7;
+      }
+      .container {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 28px 20px 60px;
+      }
+      header h1 { margin: 0 0 6px; font-size: 28px; }
+      header small { color: var(--muted); }
+      hr { border: 0; border-top: 1px solid var(--border); margin: 18px 0 24px; }
+      h2 { font-size: 20px; margin: 26px 0 8px; }
+      p, li { font-size: 16px; }
+      ul { padding-left: 20px; }
+      .callout {
+        border: 1px solid var(--border);
+        background: #f8fafc;
+        border-radius: 10px;
+        padding: 14px 16px;
+        color: #0f172a;
+        margin: 16px 0;
+      }
+      footer { color: var(--muted); margin-top: 26px; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>OneBook 隐私政策</h1>
+        <p><small>生效日期：YYYY 年 MM 月 DD 日｜最后更新：YYYY 年 MM 月 DD 日</small></p>
+        <p><small>适用产品：OneBook iOS 应用</small></p>
+      </header>
+      <hr />
+
+      <section>
+        <div class="callout">
+          <strong>隐私承诺：</strong> OneBook 尊重并保护您的隐私。除非在获得您的明确同意或出于法律要求，我们不会将任何个人信息分享给第三方。绝不进行广告跟踪或用户画像。
+        </div>
+        <p>欢迎使用 OneBook（以下简称“本应用”）。本隐私政策旨在说明我们如何处理您在使用本应用过程中产生的数据，包括收集、使用、存储与共享的相关方式。请您在使用本应用前仔细阅读并理解本政策。</p>
+      </section>
+
+      <section>
+        <h2>一、我们收集的信息</h2>
+        <p>本应用尽可能在设备本地处理数据，默认情况下不向第三方服务器传输您的内容。根据您使用的功能，我们可能会收集以下信息：</p>
+        <ul>
+          <li>
+            <strong>您主动提供的书籍与阅读数据</strong>：包括书名、作者、阅读进度、书籍标签与个人笔记等。这些数据仅保存在您的设备本地数据库（GRDB/SQLite）中。
+          </li>
+          <li>
+            <strong>扫描页内容（可选）</strong>：当您使用系统相机/扫描功能（VisionKit）识别书页时，相关图像与识别文本在设备端处理与存储。除非您主动分享，应用不会上传这些内容。
+          </li>
+          <li>
+            <strong>使用数据（非个性化）</strong>：为改进应用稳定性与体验，我们可能记录基础的错误日志或性能指标。这些数据不包含可识别您个人身份的信息。
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>二、设备权限</h2>
+        <p>为实现特定功能，本应用可能会请求以下系统权限：</p>
+        <ul>
+          <li><strong>相机</strong>：用于扫描/识别书页内容。</li>
+          <li><strong>照片图库（可选）</strong>：用于从相册导入图片或将生成内容保存到本地。</li>
+          <li><strong>通知（可选）</strong>：用于提醒阅读计划或相关进度。</li>
+        </ul>
+        <p>您可以随时在系统设置中撤回或调整这些权限。撤回权限可能会影响相关功能的使用，但不会影响您访问其他功能。</p>
+      </section>
+
+      <section>
+        <h2>三、数据存储与处理方式</h2>
+        <ul>
+          <li><strong>本地数据库</strong>：应用使用 GRDB/SQLite 在设备本地存储您的书籍与阅读数据。</li>
+          <li><strong>离线语音合成</strong>：若使用 Sherpa ONNX TTS 功能，模型与词表存储于本地并在设备端运行，不会将您的文本上传到远程服务器。</li>
+          <li><strong>云端分享模块状态</strong>：过去的 CloudKit（公共数据库）分享模块目前已停用，应用界面中“分享书籍”入口已移除。若未来重新启用，我们将以显著方式提示并征求您的明确同意。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>四、数据共享与第三方服务</h2>
+        <ul>
+          <li>我们不出售、不出租您的个人数据。</li>
+          <li>除非法律法规要求或为履行司法/行政机构命令，我们不会向任何第三方披露您的数据。</li>
+          <li>当您主动导出或分享内容到其他平台时，请遵循该平台的隐私政策与使用条款。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>五、未成年人保护</h2>
+        <p>我们建议未成年人在法定监护人指导下使用本应用。如您是监护人并认为孩子在未获得许可的情况下向我们提供了信息，请通过下方方式与我们联系，我们将及时处理。</p>
+      </section>
+
+      <section>
+        <h2>六、您的权利</h2>
+        <ul>
+          <li><strong>访问与更正</strong>：您可以在应用内查看与编辑书籍数据。</li>
+          <li><strong>导出与删除</strong>：我们将提供数据导出与删除的便利。删除操作不可恢复，请谨慎执行。</li>
+          <li><strong>权限管理</strong>：您可在系统设置中管理相机、照片等权限。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>七、信息安全</h2>
+        <p>我们采用合理的技术与管理措施保护您的数据安全，包括本地存储加固与最小化数据收集原则。但请注意，任何系统都无法保证绝对安全。</p>
+      </section>
+
+      <section>
+        <h2>八、政策更新</h2>
+        <p>当本隐私政策发生重大变更时，我们将通过应用内提示或版本更新说明进行通知。继续使用本应用即表示您接受更新后的条款。</p>
+      </section>
+
+      <section>
+        <h2>九、联系我们</h2>
+        <p>如您对本隐私政策或数据保护有任何疑问与建议，可通过以下方式与我们联系：</p>
+        <ul>
+          <li>电子邮箱：<a href="mailto:privacy@example.com">privacy@example.com</a></li>
+          <li>公司信息：在此填写公司/开发者名称与联系地址</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>版权所有 © 在此填写公司/开发者名称。本文档用于说明 OneBook 的隐私实践，未尽事宜以适用法律法规为准。</p>
+        <p>版本：1.0</p>
+      </footer>
+    </main>
+  </body>
+  </html>
