@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>autoSchedule 技术支持 | Technical Support</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --primary: #2563eb;
+      --accent: #22d3ee;
+      --border: #e5e7eb;
+    }
+    html, body { margin: 0; padding: 0; background: var(--bg); font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, system-ui; color: var(--text); }
+    .container { max-width: 920px; margin: 0 auto; padding: 24px; }
+    .header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    h1 { font-size: 24px; margin: 0; }
+    .lang-toggle { display: flex; gap: 8px; }
+    .lang-toggle button { border: 1px solid var(--border); background: var(--card); color: var(--text); padding: 8px 12px; border-radius: 999px; cursor: pointer; }
+    .lang-toggle button.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.06); padding: 20px; margin-top: 16px; }
+    .card h2 { margin-top: 0; font-size: 18px; }
+    .muted { color: var(--muted); }
+    .section { margin-top: 12px; }
+    .section ul { margin: 8px 0 0 18px; }
+    .kbd { background: #edf2f7; border: 1px solid var(--border); padding: 0 6px; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .footer { text-align: center; color: var(--muted); font-size: 13px; padding: 16px 0 0; }
+    .chip { display: inline-block; padding: 4px 8px; border-radius: 999px; background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; font-size: 12px; }
+    .two-col { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 760px) { .two-col { grid-template-columns: 1fr 1fr; } }
+    .hidden { display: none; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>autoSchedule 支持中心 · Support Center</h1>
+      <div class="lang-toggle" role="tablist" aria-label="Language Switch">
+        <button id="btn-zh" class="active" onclick="setLang('zh')" role="tab" aria-selected="true">中文</button>
+        <button id="btn-en" onclick="setLang('en')" role="tab" aria-selected="false">English</button>
+      </div>
+    </div>
+    <p class="muted">帮助你快速上手、排查问题，并联系技术支持。</p>
+
+    <!-- Overview -->
+    <div class="card">
+      <div class="zh">
+        <h2>概览</h2>
+        <p>autoSchedule 是一款面向家庭的学习计划与奖励管理应用，核心模块包括：<span class="chip">目标 Goals</span>、<span class="chip">任务日历 Dashboard</span>、<span class="chip">奖励 Rewards</span>、<span class="chip">应用锁定 App Lock</span>。</p>
+        <div class="section two-col">
+          <div>
+            <strong>常用入口</strong>
+            <ul>
+              <li>添加目标：右上角 <span class="kbd">＋</span></li>
+              <li>打开设置：齿轮图标 <span class="kbd">⚙︎</span></li>
+              <li>切换语言：设置 → 语言设置</li>
+            </ul>
+          </div>
+          <div>
+            <strong>系统要求</strong>
+            <ul>
+              <li>iOS 15 及以上</li>
+              <li>建议使用真机体验完整功能</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="en hidden">
+        <h2>Overview</h2>
+        <p>autoSchedule is a family-oriented study planning and reward management app. Key modules: <span class="chip">Goals</span>, <span class="chip">Dashboard</span>, <span class="chip">Rewards</span>, <span class="chip">App Lock</span>.</p>
+        <div class="section two-col">
+          <div>
+            <strong>Quick Access</strong>
+            <ul>
+              <li>Add goal: top-right <span class="kbd">＋</span></li>
+              <li>Open settings: gear icon <span class="kbd">⚙︎</span></li>
+              <li>Change language: Settings → Language</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Requirements</strong>
+            <ul>
+              <li>iOS 15 or later</li>
+              <li>Use a physical device for full features</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How-To -->
+    <div class="card">
+      <div class="zh">
+        <h2>操作指南</h2>
+        <div class="section">
+          <strong>添加目标</strong>
+          <ul>
+            <li>点击右上角 <span class="kbd">＋</span> → 选择类型 → 填写名称与日期。</li>
+            <li>可选：上传 PDF 学习材料，启用 AI 计划生成。</li>
+          </ul>
+        </div>
+        <div class="section">
+          <strong>应用锁定（家长密码）</strong>
+          <ul>
+            <li>设置 → 应用锁定设置 → 首次将提示创建家长密码。</li>
+            <li>从列表选择需要锁定的应用或类别后，点击保存并锁定。</li>
+          </ul>
+        </div>
+        <div class="section">
+          <strong>奖励中心</strong>
+          <ul>
+            <li>完成任务后自动获得奖励分钟数。</li>
+            <li>在奖励中心查看余额、兑换记录，并设置每日兑换限额。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="en hidden">
+        <h2>How-To</h2>
+        <div class="section">
+          <strong>Add a Goal</strong>
+          <ul>
+            <li>Tap top-right <span class="kbd">＋</span> → choose type → fill name and dates.</li>
+            <li>Optional: attach a PDF to enable AI plan generation.</li>
+          </ul>
+        </div>
+        <div class="section">
+          <strong>App Lock (Parental Password)</strong>
+          <ul>
+            <li>Settings → App Lock: you will be prompted to create a parental password on first use.</li>
+            <li>Select apps or categories to lock, then tap Save & Lock.</li>
+          </ul>
+        </div>
+        <div class="section">
+          <strong>Reward Center</strong>
+          <ul>
+            <li>Earn minutes automatically when marking tasks completed.</li>
+            <li>View balance, redemption history, and set daily limits.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Troubleshooting -->
+    <div class="card">
+      <div class="zh">
+        <h2>故障排查</h2>
+        <ul>
+          <li><strong>界面显示本地化键（如 goals.empty.title）</strong>：前往设置 → 语言设置，切换一次语言或选择“跟随系统”，然后重启 App。</li>
+          <li><strong>无法锁定应用</strong>：检查“屏幕使用时间”授权是否已开启；如未授权，请在设置页点击“请求授权”。</li>
+          <li><strong>AI 计划生成较慢</strong>：PDF 文件过大或网络波动可能导致延迟，请耐心等待或稍后重试。</li>
+          <li><strong>家长密码忘记</strong>：请联系技术支持进行人工重置验证。</li>
+        </ul>
+      </div>
+      <div class="en hidden">
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li><strong>Screen shows localization keys (e.g., goals.empty.title)</strong>: go to Settings → Language, toggle once or select “Follow System”, then restart the app.</li>
+          <li><strong>Cannot lock apps</strong>: ensure Screen Time authorization is granted; tap “Request Permission” in App Lock settings if not.</li>
+          <li><strong>Slow AI plan generation</strong>: large PDFs or unstable network may cause delays; please wait or retry later.</li>
+          <li><strong>Forgot parental password</strong>: contact support for manual reset verification.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card">
+      <div class="zh">
+        <h2>常见问题</h2>
+        <ul>
+          <li>如何切换到英文？进入“设置 → 语言设置”，选择 English。</li>
+          <li>如何删除目标？在目标卡片右上角点击垃圾桶图标并确认。</li>
+          <li>如何导入图片或PDF？在目标详情页使用“上传/查看图片”，或在添加目标时附加 PDF。</li>
+        </ul>
+      </div>
+      <div class="en hidden">
+        <h2>FAQ</h2>
+        <ul>
+          <li>How to switch to Chinese? Go to Settings → Language and choose Chinese (Simplified).</li>
+          <li>How to delete a goal? Tap the trash icon on the goal card and confirm.</li>
+          <li>How to import images or PDFs? Use “Upload/View Images” in goal details, or attach a PDF when adding a goal.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact & Legal -->
+    <div class="card">
+      <div class="zh">
+        <h2>联系技术支持</h2>
+        <p>邮箱：<a href="mailto:19927728@qq.com">19927728@qq.com</a></p>
+        <p class="muted">请附上问题描述、出现步骤与截图，若涉及 PDF，请提供示例文件以便复现。</p>
+        <div class="section">
+          <strong>隐私与合规</strong>
+          <ul>
+            <li>应用遵循本地隐私法规，不会收集与目的无关的个人数据。</li>
+            <li>如需数据导出或删除，请通过支持邮箱联系。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="en hidden">
+        <h2>Contact Support</h2>
+        <p>Email: <a href="mailto:19927728@qq.com">19927728@qq.com</a></p>
+        <p class="muted">Include a clear description, reproduction steps, and screenshots. For PDF-related issues, please attach a sample file.</p>
+        <div class="section">
+          <strong>Privacy & Compliance</strong>
+          <ul>
+            <li>The app follows local privacy regulations and does not collect unrelated personal data.</li>
+            <li>For data export or deletion requests, contact the support email.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">© autoSchedule. All rights reserved.</div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const zhEls = document.querySelectorAll('.zh');
+      const enEls = document.querySelectorAll('.en');
+      const btnZh = document.getElementById('btn-zh');
+      const btnEn = document.getElementById('btn-en');
+      const showZh = lang === 'zh';
+      zhEls.forEach(el => el.classList.toggle('hidden', !showZh));
+      enEls.forEach(el => el.classList.toggle('hidden', showZh));
+      btnZh.classList.toggle('active', showZh);
+      btnEn.classList.toggle('active', !showZh);
+      try { localStorage.setItem('autoSchedule.support.lang', lang); } catch (e) {}
+    }
+    (function init() {
+      const saved = (function(){ try { return localStorage.getItem('autoSchedule.support.lang'); } catch(e) { return null; } })();
+      setLang(saved === 'en' ? 'en' : 'zh');
+    })();
+  </script>
+</body>
+</html>
+
