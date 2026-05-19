@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanerForMac Support</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            margin: 0;
+            padding: 24px 16px 48px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px 32px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0 0 8px;
+        }
+        .intro {
+            color: #6e6e73;
+            margin: 0 0 32px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e5ea;
+        }
+        ul.faq {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul.faq li {
+            margin-bottom: 20px;
+        }
+        ul.faq li strong {
+            display: block;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+        ul.faq li p {
+            margin: 0;
+            color: #424245;
+        }
+        .contact ul {
+            padding-left: 20px;
+            margin: 12px 0 0;
+        }
+        .contact a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5ea;
+            font-size: 14px;
+            color: #86868b;
+            text-align: center;
+        }
+        .lang-note {
+            font-size: 13px;
+            color: #86868b;
+            margin-top: 24px;
+        }
+        .lang-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 8px;
+        }
+        .lang-bar a {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #0071e3;
+            background: #f5f5f7;
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.15s ease;
+        }
+        .lang-bar a:hover {
+            background: #e8e8ed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-bar">
+            <a href="cleanerForMac-support.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+        </div>
+        <h1>CleanerForMac Support</h1>
+        <p class="intro">Welcome to CleanerForMac! This app helps you analyze storage, clean caches and logs, uninstall apps, and monitor performance on your Mac. All operations run locally on your device. If you need help, see the FAQ below or contact us.</p>
+
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <ul class="faq">
+            <li>
+                <strong>Why is Full Disk Access required? How do I enable it?</strong>
+                <p>Full Disk Access is needed to scan and clean caches, logs, and app data in your user folders. Open System Settings → Privacy &amp; Security → Full Disk Access, click “+” to add CleanerForMac (or the MacCleaner.app path shown in the app), turn it on, then quit the app completely (⌘Q) and reopen it. You can check permission status in Settings inside the app.</p>
+            </li>
+            <li>
+                <strong>Permission is on, but the app still says access is denied?</strong>
+                <p>Full Disk Access applies to a specific .app path, not just the app name. If you run from Xcode, add the MacCleaner.app path for that build (shown in the app). After granting access, quit with ⌘Q and reopen. If it still fails, remove old entries in the list and add the path again.</p>
+            </li>
+            <li>
+                <strong>Why don’t scan results match System Settings?</strong>
+                <p>Scan results are estimates to help you find cleanable items. “System Data” includes usage that cannot be itemized, so totals may be lower than in System Settings. Use System Settings as the reference and verify important files before cleaning.</p>
+            </li>
+            <li>
+                <strong>Where do cleaned files go? Can I recover them?</strong>
+                <p>Cleanup and uninstall move files to the Trash; they are not erased immediately. You can restore them until you empty the Trash. Back up important data before cleaning.</p>
+            </li>
+            <li>
+                <strong>What should I know before cleaning WeChat, Cursor, or other app data?</strong>
+                <p>Quit the app completely (⌘Q) first, then use Uninstall Apps → Clean data. Items marked “Risky” may include chat history or state databases and may not be recoverable. Select carefully.</p>
+            </li>
+            <li>
+                <strong>How do I change the interface language?</strong>
+                <p>Open Settings in the sidebar, then choose Follow System or a specific language under Interface Language (Simplified Chinese, Traditional Chinese, English, Japanese, Korean, and more). Changes apply immediately.</p>
+            </li>
+            <li>
+                <strong>Performance Monitor shows no data?</strong>
+                <p>Open Performance Monitor and tap Start. Adjust the refresh interval in Settings, or enable “Start monitoring when opening the page.” If data still does not appear, restart the app and try again.</p>
+            </li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <p>If the FAQ does not solve your issue, please contact us:</p>
+            <ul>
+                <li>Email: <a href="mailto:19927728@qq.com">19927728@qq.com</a></li>
+            </ul>
+            <p>We aim to reply within 24 hours. Thank you for your support!</p>
+        </div>
+
+        <p class="lang-note">The App Store name may appear as CleanerInMac; it is the same app as CleanerForMac.</p>
+
+        <footer>
+            <p>© 2026 Yi Lin. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
