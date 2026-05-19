@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanerForMac 技术支持</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            margin: 0;
+            padding: 24px 16px 48px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px 32px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0 0 8px;
+        }
+        .intro {
+            color: #6e6e73;
+            margin: 0 0 32px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e5ea;
+        }
+        ul.faq {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul.faq li {
+            margin-bottom: 20px;
+        }
+        ul.faq li strong {
+            display: block;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+        ul.faq li p {
+            margin: 0;
+            color: #424245;
+        }
+        .contact ul {
+            padding-left: 20px;
+            margin: 12px 0 0;
+        }
+        .contact a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5ea;
+            font-size: 14px;
+            color: #86868b;
+            text-align: center;
+        }
+        .lang-note {
+            font-size: 13px;
+            color: #86868b;
+            margin-top: 24px;
+        }
+        .lang-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 8px;
+        }
+        .lang-bar a {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #0071e3;
+            background: #f5f5f7;
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.15s ease;
+        }
+        .lang-bar a:hover {
+            background: #e8e8ed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-bar">
+            <a href="cleanerForMac-support-en.html" hreflang="en" lang="en">English</a>
+        </div>
+        <h1>CleanerForMac 技术支持</h1>
+        <p class="intro">欢迎使用 CleanerForMac！本应用帮助您在 Mac 上分析储存空间、清理缓存与日志、卸载应用并监控性能。所有操作均在本地完成。如遇问题，请参阅下方说明或联系我们。</p>
+
+        <h2>常见问题 (FAQ)</h2>
+        <ul class="faq">
+            <li>
+                <strong>为什么需要「完全磁盘访问权限」？如何开启？</strong>
+                <p>扫描与清理用户目录下的缓存、日志和应用数据需要该权限。请打开「系统设置 → 隐私与安全性 → 完全磁盘访问权限」，点击「+」添加 CleanerForMac（或显示为 MacCleaner.app 的安装路径），打开开关后完全退出应用（⌘Q）再重新打开。应用内「设置」页可查看当前权限状态并跳转系统设置。</p>
+            </li>
+            <li>
+                <strong>已开启权限，但仍提示未授权？</strong>
+                <p>完全磁盘访问按「具体 .app 路径」授权，不是应用名称。若从 Xcode 运行，请在系统设置中添加本次构建的 MacCleaner.app 路径（应用内会显示路径）。授权后请 ⌘Q 完全退出后重开。若开关已开仍无效，可尝试删除列表中的旧条目后重新添加。</p>
+            </li>
+            <li>
+                <strong>扫描结果为什么和「系统设置」里的数字不一致？</strong>
+                <p>本应用的扫描结果为估算值，用于发现可清理项；「系统数据」包含无法逐项归类的占用，合计可能小于系统设置显示值。请以系统设置为准，清理前请自行确认重要文件。</p>
+            </li>
+            <li>
+                <strong>清理后的文件去哪了？能否恢复？</strong>
+                <p>清理与卸载会将文件移至「废纸篓」，不会立即永久删除。在清空废纸篓之前，您可以从废纸篓中恢复。请在清理前确认已备份重要数据。</p>
+            </li>
+            <li>
+                <strong>清理微信、Cursor 等应用数据前要注意什么？</strong>
+                <p>请先完全退出对应应用（⌘Q），再在「卸载应用」中选择「清理数据」。标记为「谨慎」的项可能包含聊天记录或状态库，删除后可能无法恢复，请谨慎勾选。</p>
+            </li>
+            <li>
+                <strong>如何切换界面语言？</strong>
+                <p>打开侧边栏「设置」，在「界面语言」中选择「跟随系统」或指定语言（支持简体中文、繁体中文、英语、日语、韩语等）。切换后立即生效。</p>
+            </li>
+            <li>
+                <strong>性能监控不显示数据？</strong>
+                <p>进入「性能监控」后点击「开始」；可在「设置」中调整刷新间隔，或开启「打开页面时自动开始监控」。若长时间无数据，请重启应用后重试。</p>
+            </li>
+        </ul>
+
+        <h2>联系我们</h2>
+        <div class="contact">
+            <p>如果以上问题无法解决，请通过以下方式联系我们：</p>
+            <ul>
+                <li>电子邮件：<a href="mailto:19927728@qq.com">19927728@qq.com</a></li>
+            </ul>
+            <p>我们将在 24 小时内回复您的咨询。感谢您的支持！</p>
+        </div>
+
+        <p class="lang-note">App Store 名称可能显示为 CleanerInMac，与 CleanerForMac 为同一应用。</p>
+
+        <footer>
+            <p>© 2026 Yi Lin. 保留所有权利。</p>
+        </footer>
+    </div>
+</body>
+</html>
