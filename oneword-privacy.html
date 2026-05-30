@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>oneWord — 隐私政策</title>
+  <meta name="description" content="oneWord 隐私政策。">
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --surface: #ffffff;
+      --text: #1c1c1e;
+      --muted: #636366;
+      --accent: #2f6f4e;
+      --border: #e5e2db;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(28, 28, 30, 0.06);
+      --max: 720px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    a { color: var(--accent); }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      margin: 28px 0 10px;
+    }
+
+    p, li { color: #2c2c2e; }
+
+    ul { padding-left: 1.25rem; }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 20px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← 返回技术支持</a>
+
+    <article class="card">
+      <h1>oneWord 隐私政策</h1>
+      <p class="updated">最后更新：2026 年 5 月 29 日</p>
+
+      <p>oneWord（「我们」）尊重并保护您的隐私。本政策说明我们如何处理与您使用本 App 相关的信息。</p>
+
+      <h2>1. 我们收集的信息</h2>
+      <p>oneWord 是一款以本地学习为主的 App，<strong>我们不会运营用于收集个人身份信息的自有服务器</strong>，也不会将您的学习数据出售给第三方。</p>
+      <ul>
+        <li><strong>学习数据</strong>：您导入的词书、学习进度、复习记录、设置偏好等，默认存储在您的设备上。</li>
+        <li><strong>iCloud 数据</strong>：若您启用 iCloud 同步，上述数据会通过 Apple CloudKit 在您的 Apple ID 关联设备间同步，受 Apple 隐私政策约束。</li>
+        <li><strong>设备端处理</strong>：手写识别（OCR）、语音朗读（TTS）等在设备本地完成，相关输入不会上传至我们的服务器。</li>
+      </ul>
+
+      <h2>2. 信息的使用</h2>
+      <p>您的数据仅用于提供背单词、复习调度、进度统计等 App 核心功能，不会用于定向广告或跨 App 追踪。</p>
+
+      <h2>3. 第三方服务</h2>
+      <ul>
+        <li><strong>Apple iCloud / CloudKit</strong>：用于可选的多设备同步。</li>
+        <li><strong>Apple 系统服务</strong>：如 Speech（TTS）、Vision（OCR）等，按 Apple 系统机制在本地或系统框架内运行。</li>
+      </ul>
+      <p>内置分级词库等静态资源随 App 分发，不包含您的个人信息。</p>
+
+      <h2>4. 数据保留与删除</h2>
+      <p>您可在 App 内删除词书或学习记录。卸载 App 将移除设备上的本地数据。iCloud 中的数据可通过 iOS / macOS 的 iCloud 存储设置进行管理或删除。</p>
+
+      <h2>5. 儿童隐私</h2>
+      <p>oneWord 不面向 13 岁以下儿童主动收集个人信息。若您认为我们无意中处理了儿童信息，请通过技术支持邮箱联系我们。</p>
+
+      <h2>6. 政策变更</h2>
+      <p>我们可能更新本政策，并在本页面注明最新日期。重大变更时，我们会在 App 或本页面提供适当提示。</p>
+
+      <h2>7. 联系我们</h2>
+      <p>有关隐私问题，请发送邮件至：<a href="mailto:support@example.com">support@example.com</a></p>
+    </article>
+
+    <footer>
+      <p>© <span id="year"></span> oneWord</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
