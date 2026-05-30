@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>oneWord — 技术支持</title>
+  <meta name="description" content="oneWord 背单词 App 技术支持、常见问题与联系方式。">
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --surface: #ffffff;
+      --text: #1c1c1e;
+      --muted: #636366;
+      --accent: #2f6f4e;
+      --accent-soft: #e8f3ec;
+      --border: #e5e2db;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(28, 28, 30, 0.06);
+      --max: 720px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 16px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #3d8b63, #2f6f4e);
+      box-shadow: var(--shadow);
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .lang-switch {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .lang-switch button {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.15rem;
+      letter-spacing: -0.01em;
+    }
+
+    p, li { color: #2c2c2e; }
+
+    ul, ol { padding-left: 1.25rem; margin: 0; }
+
+    li + li { margin-top: 8px; }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .meta {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .meta li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta li:last-child { border-bottom: 0; padding-bottom: 0; }
+
+    .meta span:first-child { color: var(--muted); }
+
+    .contact-box {
+      background: var(--accent-soft);
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 8px;
+    }
+
+    .contact-box a {
+      font-weight: 600;
+      word-break: break-all;
+    }
+
+    details {
+      border-top: 1px solid var(--border);
+      padding: 14px 0;
+    }
+
+    details:first-of-type { border-top: 0; padding-top: 0; }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: "+";
+      float: right;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    details[open] summary::after { content: "−"; }
+
+    details p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 28px;
+    }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">1W</div>
+      <h1>oneWord</h1>
+      <p class="subtitle" data-i18n="subtitle">技术支持</p>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="active" data-lang="zh">简体中文</button>
+        <button type="button" data-lang="en">English</button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2 data-i18n="about_title">关于 oneWord</h2>
+        <p data-i18n="about_body">
+          oneWord 是一款面向备考与自主学习的背单词 App，支持自定义词书导入、闪卡/填空/连线等多种默写模式，并采用 FSRS 算法个性化安排复习。学习数据保存在您的设备本地，并可通过 iCloud 在多设备间同步。
+        </p>
+      </section>
+
+      <section>
+        <h2 data-i18n="info_title">应用信息</h2>
+        <ul class="meta">
+          <li><span data-i18n="info_name">应用名称</span><span>oneWord</span></li>
+          <li><span data-i18n="info_bundle">Bundle ID</span><span>com.linyi.oneWord</span></li>
+          <li><span data-i18n="info_version">当前版本</span><span>1.0</span></li>
+          <li><span data-i18n="info_platform">支持平台</span><span data-i18n="info_platform_value">iOS 17+、iPadOS 17+、macOS 14+</span></li>
+          <li><span data-i18n="info_languages">界面语言</span><span data-i18n="info_languages_value">English、简体中文、繁体中文</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 data-i18n="contact_title">联系我们</h2>
+        <p data-i18n="contact_body">如遇问题、功能建议或数据相关疑问，请发送邮件。我们通常会在 3 个工作日内回复。</p>
+        <div class="contact-box">
+          <span data-i18n="contact_email_label">技术支持邮箱：</span>
+          <a href="mailto:support@example.com">support@example.com</a>
+        </div>
+        <p style="margin: 14px 0 0; font-size: 0.92rem; color: var(--muted);" data-i18n="contact_tip">
+          请在邮件中说明设备型号、系统版本、App 版本，并尽量附上截图或录屏，以便我们更快定位问题。
+        </p>
+      </section>
+
+      <section>
+        <h2 data-i18n="faq_title">常见问题</h2>
+
+        <details>
+          <summary data-i18n="faq1_q">如何导入自己的词书？</summary>
+          <p data-i18n="faq1_a">在词书列表中选择导入，支持 CSV、TXT 等格式。导入时可映射「单词」「释义」「音标」等列，并可选择去重、繁简转换与排序。</p>
+        </details>
+
+        <details>
+          <summary data-i18n="faq2_q">学习进度会丢失吗？</summary>
+          <p data-i18n="faq2_a">进度默认保存在本机。若已在系统设置中登录同一 Apple ID 并开启 iCloud，可在支持 iCloud 的设备间同步词书与学习记录。</p>
+        </details>
+
+        <details>
+          <summary data-i18n="faq3_q">iCloud 同步不生效怎么办？</summary>
+          <p data-i18n="faq3_a">请确认：① 设备已登录 iCloud；② 系统设置中为 oneWord 开启了 iCloud；③ 网络连接正常。首次同步或大量数据导入后可能需要等待数分钟，请保持 App 在前台或稍后重开查看。</p>
+        </details>
+
+        <details>
+          <summary data-i18n="faq4_q">FSRS 复习算法如何工作？</summary>
+          <p data-i18n="faq4_a">每次复习后请选择 Again、Hard、Good 或 Easy，系统会根据您的评分计算下次复习时间。可在设置中调整目标留存率（Desired Retention）以改变复习频率。</p>
+        </details>
+
+        <details>
+          <summary data-i18n="faq5_q">支持哪些学习方式？</summary>
+          <p data-i18n="faq5_a">支持闪卡（看英写中/看中写英）、听力盲打、填空网格、连线匹配等模式；iPad 上可使用 Apple Pencil 手写输入，并支持本地 OCR 识别。</p>
+        </details>
+
+        <details>
+          <summary data-i18n="faq6_q">如何从书籍生成词书？</summary>
+          <p data-i18n="faq6_a">支持从 EPUB、PDF 导入正文并自动筛词，结合内置分级参考词库生成词书。扫描版 PDF 会使用设备端 Vision OCR 提取文字。</p>
+        </details>
+
+        <details>
+          <summary data-i18n="faq7_q">如何删除我的数据？</summary>
+          <p data-i18n="faq7_a">可在 App 内删除词书或重置学习记录。若需彻底移除本机数据，请卸载 App。iCloud 中的数据可在系统 iCloud 存储管理中管理。</p>
+        </details>
+      </section>
+
+      <section>
+        <h2 data-i18n="privacy_title">隐私说明</h2>
+        <p data-i18n="privacy_body">
+          oneWord 不收集用于广告或追踪的个人数据。词书、学习记录等主要数据存储在您的设备；若启用 iCloud，数据经 Apple CloudKit 同步。手写与 OCR 均在设备本地处理，不会上传至我们的服务器。
+        </p>
+        <p style="margin-top: 12px;">
+          <a href="privacy.html" data-i18n="privacy_link">查看完整隐私政策 →</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> oneWord. <span data-i18n="footer_rights">保留所有权利。</span></p>
+    </footer>
+  </div>
+
+  <script>
+    const i18n = {
+      zh: {
+        subtitle: "技术支持",
+        about_title: "关于 oneWord",
+        about_body: "oneWord 是一款面向备考与自主学习的背单词 App，支持自定义词书导入、闪卡/填空/连线等多种默写模式，并采用 FSRS 算法个性化安排复习。学习数据保存在您的设备本地，并可通过 iCloud 在多设备间同步。",
+        info_title: "应用信息",
+        info_name: "应用名称",
+        info_bundle: "Bundle ID",
+        info_version: "当前版本",
+        info_platform: "支持平台",
+        info_platform_value: "iOS 17+、iPadOS 17+、macOS 14+",
+        info_languages: "界面语言",
+        info_languages_value: "English、简体中文、繁体中文",
+        contact_title: "联系我们",
+        contact_body: "如遇问题、功能建议或数据相关疑问，请发送邮件。我们通常会在 3 个工作日内回复。",
+        contact_email_label: "技术支持邮箱：",
+        contact_tip: "请在邮件中说明设备型号、系统版本、App 版本，并尽量附上截图或录屏，以便我们更快定位问题。",
+        faq_title: "常见问题",
+        faq1_q: "如何导入自己的词书？",
+        faq1_a: "在词书列表中选择导入，支持 CSV、TXT 等格式。导入时可映射「单词」「释义」「音标」等列，并可选择去重、繁简转换与排序。",
+        faq2_q: "学习进度会丢失吗？",
+        faq2_a: "进度默认保存在本机。若已在系统设置中登录同一 Apple ID 并开启 iCloud，可在支持 iCloud 的设备间同步词书与学习记录。",
+        faq3_q: "iCloud 同步不生效怎么办？",
+        faq3_a: "请确认：① 设备已登录 iCloud；② 系统设置中为 oneWord 开启了 iCloud；③ 网络连接正常。首次同步或大量数据导入后可能需要等待数分钟，请保持 App 在前台或稍后重开查看。",
+        faq4_q: "FSRS 复习算法如何工作？",
+        faq4_a: "每次复习后请选择 Again、Hard、Good 或 Easy，系统会根据您的评分计算下次复习时间。可在设置中调整目标留存率（Desired Retention）以改变复习频率。",
+        faq5_q: "支持哪些学习方式？",
+        faq5_a: "支持闪卡（看英写中/看中写英）、听力盲打、填空网格、连线匹配等模式；iPad 上可使用 Apple Pencil 手写输入，并支持本地 OCR 识别。",
+        faq6_q: "如何从书籍生成词书？",
+        faq6_a: "支持从 EPUB、PDF 导入正文并自动筛词，结合内置分级参考词库生成词书。扫描版 PDF 会使用设备端 Vision OCR 提取文字。",
+        faq7_q: "如何删除我的数据？",
+        faq7_a: "可在 App 内删除词书或重置学习记录。若需彻底移除本机数据，请卸载 App。iCloud 中的数据可在系统 iCloud 存储管理中管理。",
+        privacy_title: "隐私说明",
+        privacy_body: "oneWord 不收集用于广告或追踪的个人数据。词书、学习记录等主要数据存储在您的设备；若启用 iCloud，数据经 Apple CloudKit 同步。手写与 OCR 均在设备本地处理，不会上传至我们的服务器。",
+        privacy_link: "查看完整隐私政策 →",
+        footer_rights: "保留所有权利。"
+      },
+      en: {
+        subtitle: "Technical Support",
+        about_title: "About oneWord",
+        about_body: "oneWord is a vocabulary learning app for exam prep and self-study. Import custom word lists, practice with flashcards, grid fill-in, matching, and more. Reviews are scheduled with the FSRS algorithm. Your data stays on device and can sync across devices via iCloud.",
+        info_title: "App Information",
+        info_name: "App Name",
+        info_bundle: "Bundle ID",
+        info_version: "Version",
+        info_platform: "Platforms",
+        info_platform_value: "iOS 17+, iPadOS 17+, macOS 14+",
+        info_languages: "Languages",
+        info_languages_value: "English, Simplified Chinese, Traditional Chinese",
+        contact_title: "Contact Us",
+        contact_body: "For bugs, feature requests, or data questions, email us. We usually reply within 3 business days.",
+        contact_email_label: "Support email: ",
+        contact_tip: "Please include your device model, OS version, app version, and screenshots or screen recordings when possible.",
+        faq_title: "FAQ",
+        faq1_q: "How do I import my own word list?",
+        faq1_a: "Choose Import from the deck list. CSV and TXT are supported. Map columns for word, definition, phonetics, and optional preprocessing such as deduplication and traditional/simplified conversion.",
+        faq2_q: "Will I lose my study progress?",
+        faq2_a: "Progress is stored locally by default. If you are signed in to iCloud with the same Apple ID and iCloud is enabled for oneWord, decks and study records can sync across your devices.",
+        faq3_q: "iCloud sync is not working. What should I do?",
+        faq3_a: "Check that: (1) you are signed in to iCloud; (2) iCloud is enabled for oneWord in system settings; (3) your network is stable. Initial sync or large imports may take several minutes—keep the app open or reopen it later.",
+        faq4_q: "How does FSRS scheduling work?",
+        faq4_a: "After each review, tap Again, Hard, Good, or Easy. The app schedules the next review from your rating. Adjust Desired Retention in Settings to change review frequency.",
+        faq5_q: "What study modes are available?",
+        faq5_a: "Flashcards (EN→ZH / ZH→EN), listening dictation, grid fill-in, and matching. On iPad you can use Apple Pencil handwriting with on-device OCR.",
+        faq6_q: "How do I build a deck from a book?",
+        faq6_a: "Import EPUB or PDF text and auto-extract vocabulary using bundled reference lexicons. Scanned PDFs use on-device Vision OCR.",
+        faq7_q: "How do I delete my data?",
+        faq7_a: "Delete decks or reset progress inside the app. To remove all local data, uninstall the app. Manage iCloud data in system iCloud storage settings.",
+        privacy_title: "Privacy",
+        privacy_body: "oneWord does not collect personal data for advertising or tracking. Decks and study records are stored on your device; if iCloud is enabled, data syncs via Apple CloudKit. Handwriting and OCR run entirely on device and are not uploaded to our servers.",
+        privacy_link: "Read full Privacy Policy →",
+        footer_rights: "All rights reserved."
+      }
+    };
+
+    function setLang(lang) {
+      document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (i18n[lang][key]) el.textContent = i18n[lang][key];
+      });
+      document.querySelectorAll(".lang-switch button").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.lang === lang);
+      });
+      localStorage.setItem("oneword-support-lang", lang);
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".lang-switch button").forEach((btn) => {
+      btn.addEventListener("click", () => setLang(btn.dataset.lang));
+    });
+    setLang(localStorage.getItem("oneword-support-lang") || (navigator.language.startsWith("zh") ? "zh" : "en"));
+  </script>
+</body>
+</html>
